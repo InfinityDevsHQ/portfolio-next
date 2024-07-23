@@ -2,16 +2,8 @@
 import { useState } from "react";
 import { MenuCloseIcon, MenuIcon } from "./General/icons";
 import { Underline } from "./General/underline";
-
-const navLinks = [
-  "Home",
-  "About Us",
-  "Services",
-  "Experiences",
-  "Portfolio",
-  "Blog",
-  "Contact Us",
-];
+import Link from "next/link";
+import { navLinks } from "../constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +15,9 @@ export default function Navbar() {
         <div className="flex h-20 items-center justify-between px-4 py-2">
           {/* Logo */}
           <div className="">
-            <a className="text-2xl font-semibold">Mak</a>
+            <Link href="#" className="text-2xl font-semibold">
+              Mak
+            </Link>
           </div>
           <button
             className="md:hidden"
@@ -41,7 +35,7 @@ export default function Navbar() {
             <ul className="flex gap-10">
               {navLinks.map((link, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href="/"
                     className="relative pb-1.5 text-sm font-medium uppercase hover:text-primary transition duration-300 ease-in-out"
                     onMouseEnter={() => setIsHovered(link)}
@@ -49,7 +43,7 @@ export default function Navbar() {
                   >
                     {link}
                     {isHovered === link && <Underline style="h-0.5" />}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -64,15 +58,15 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 justify-center ml-6">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <a
-                  href="/"
+                <Link
+                  href="#"
                   className="relative pb-1.5 text-sm font-medium uppercase hover:text-primary transition duration-300 ease-in-out"
                   onMouseEnter={() => setIsHovered(link)}
                   onMouseLeave={() => setIsHovered("")}
                 >
                   {link}
                   {isHovered === link && <Underline style="h-0.5" />}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

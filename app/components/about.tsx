@@ -1,5 +1,6 @@
-import Image from "next/image"
-import { Underline } from "./General/underline"
+import Image from "next/image";
+import { Underline } from "./General/underline";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -28,20 +29,20 @@ export default function About() {
           dolore eu fugiat nu pariatur excepteur sint occaecat.
         </p>
         <div className="space-x-2 md:space-x-4 mt-4">
-          <a
+          <Link
             href="#"
             className="font-medium text-center px-4 sm:px-8 md:px-10 lg:px-12 py-2 md:py-4 mt-2 md:mt-6 md:w-1/2 bg-primary text-white border-2 border-primary hover:bg-transparent hover:border-primary hover:text-primary transition duration-300 ease-in-out"
           >
             View Works
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="font-medium text-center px-4 sm:px-8 md:px-10 lg:px-12 py-2 md:py-4 mt-2 md:mt-6 md:w-1/2 bg-transparent text-primary border-2 border-primary hover:bg-primary hover:border-primary hover:text-white transition duration-300 ease-in-out"
           >
             Download CV
-          </a>
+          </Link>
         </div>
       </div>
     </div>
-  )
+  );
 }

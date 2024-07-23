@@ -4,7 +4,7 @@ import Services from "./components/services";
 import Experience from "./components/experience";
 import Contact from "./components/contact";
 
-function App() {
+export default function App() {
   return (
     <>
       <Hero />
@@ -15,5 +15,3 @@ function App() {
     </>
   );
 }
-
-export default App;

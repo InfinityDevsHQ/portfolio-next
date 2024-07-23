@@ -1,16 +1,6 @@
-import { Underline } from "./General/underline"
+import { experienceArray } from "../constants";
+import { Underline } from "./General/underline";
 
-const experienceObj = [
-  {
-    title: "UI/UX Designer",
-  },
-  {
-    title: "Product Designer",
-  },
-  {
-    title: "Graphic Designer",
-  },
-]
 export default function Experience() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 lg:py-28">
@@ -26,7 +16,7 @@ export default function Experience() {
         </p>
       </div>
       <div className="grid md:grid-cols-3">
-        {experienceObj.map((exp, index) => (
+        {experienceArray.map((exp, index) => (
           <div
             className="px-4 py-8 md:px-10 md:py-14 border border-[#edecec] bg-white text-secondary hover:text-black/80 hover:bg-primary transition duration-300 ease-in-out"
             key={index}
@@ -46,5 +36,5 @@ export default function Experience() {
         ))}
       </div>
     </div>
-  )
+  );
 }

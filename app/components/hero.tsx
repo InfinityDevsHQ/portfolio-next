@@ -1,4 +1,5 @@
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -8,12 +9,12 @@ export default function Hero() {
         <h4 className="text-xl md:text-2xl text-[#666] text-center md:text-start">
           Freelance Web &amp; Mobile UI/UX Designer
         </h4>
-        <a
-          href="#contactForm"
+        <Link
+          href="#"
           className="text-xl font-medium text-center px-12 md:px-14 lg:px-16 py-2 md:py-4 mt-2 md:mt-6 md:w-1/2 bg-primary text-white border-2 border-primary hover:bg-transparent  hover:border-blue-500 hover:text-primary transition duration-300 ease-in-out"
         >
           Hire Me
-        </a>
+        </Link>
       </div>
       <div className="">
         <Image
@@ -24,5 +25,5 @@ export default function Hero() {
         />
       </div>
     </div>
-  )
+  );
 }

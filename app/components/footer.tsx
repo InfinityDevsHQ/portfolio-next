@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   DribbleIcon,
   FacebookIcon,
@@ -5,7 +6,7 @@ import {
   LinkedIn,
   PinIcon,
   TwitterIcon,
-} from "./General/icons"
+} from "./General/icons";
 
 const socialIcons = [
   { icon: <FacebookIcon className="size-5" /> },
@@ -14,27 +15,27 @@ const socialIcons = [
   { icon: <PinIcon className="size-5" /> },
   { icon: <DribbleIcon className="size-5" /> },
   { icon: <InstagramIcon className="size-5" /> },
-]
+];
 
 function FooterIcons({ icon, index }: any) {
   return (
-    <a
+    <Link
       key={index}
       href="/"
       className="bg-[#dce2ed] hover:bg-primary p-2 sm:p-3 md:p-4 rounded-full transition duration-500 ease-in-out"
     >
       {icon}
-    </a>
-  )
+    </Link>
+  );
 }
 
 export default function Footer() {
   return (
     <footer className="bg-[#f6f8fc] w-full px-4 py-8 md:py-10">
       <div className="flex flex-col items-center gap-6 justify-center max-w-2xl mx-auto px-4 py-10 md:py-14">
-        <a className="">
+        <Link href="#" className="">
           <h2 className="text-8xl text-primary font-bold">M.</h2>
-        </a>
+        </Link>
         <p className="text-center font-light text-lg text-secondary">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.
@@ -51,5 +52,5 @@ export default function Footer() {
         <p className="text-black text-center">Copyright © 2023 DroitThemes</p>
       </div>
     </footer>
-  )
+  );
 }

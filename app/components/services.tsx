@@ -1,36 +1,6 @@
 import Image from "next/image";
 import { Underline } from "./General/underline";
-
-const services = [
-  {
-    title: "UX Research",
-    style: {
-      backgroundImage:
-        "-webkit-linear-gradient(-48deg, #24e2fe 0%, #24b0fe 54%, #237efd 100%)",
-    },
-  },
-  {
-    title: "Web Development",
-    style: {
-      backgroundImage:
-        "-webkit-linear-gradient(-48deg, rgba(255,211,36,0.99) 0%, rgba(254,187,36,0.99) 54%, rgba(253,163,35,0.99) 100%)",
-    },
-  },
-  {
-    title: "App Design",
-    style: {
-      backgroundImage:
-        "-webkit-linear-gradient(-48deg, rgba(248,47,160,0.99) 0%, rgba(214,54,208,0.99) 54%, rgba(180,61,255,0.99) 100%)",
-    },
-  },
-  {
-    title: "Web Design",
-    style: {
-      backgroundImage:
-        "-webkit-linear-gradient(-48deg, rgba(0,188,128,0.99) 0%, rgba(2,204,71,0.99) 54%, rgba(3,220,13,0.99) 100%)",
-    },
-  },
-];
+import { servicesArray } from "../constants";
 
 export default function Services() {
   return (
@@ -47,7 +17,7 @@ export default function Services() {
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-4 md:gap-8">
-        {services.map((service, index) => (
+        {servicesArray.map((service, index) => (
           <div
             className="text-white px-4 py-6 sm:px-10 sm:py-8 md:px-14 md:py-12 lg:px-20 lg:py-16 rounded-2xl"
             style={service.style}

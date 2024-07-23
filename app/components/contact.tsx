@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   EmailIcon,
   FacebookIcon,
@@ -6,14 +7,14 @@ import {
   PhoneIcon,
   TwitterIcon,
   WorldIcon,
-} from "./General/icons"
-import { Underline } from "./General/underline"
+} from "./General/icons";
+import { Underline } from "./General/underline";
 
 const socialIcons = [
   { icon: <FacebookIcon className="size-4" /> },
   { icon: <TwitterIcon className="size-4" /> },
   { icon: <LinkedIn className="size-4" /> },
-]
+];
 
 const contactInfo = [
   {
@@ -26,7 +27,7 @@ const contactInfo = [
     text: "+92548616475 <br /> +92548616475",
   },
   { icon: <WorldIcon className="size-5" />, text: "www.droitthemes.com" },
-]
+];
 
 export default function Contact() {
   return (
@@ -57,13 +58,13 @@ export default function Contact() {
             <ul className="">
               <li className="flex items-center gap-1.5 my-4">
                 {socialIcons.map((icon, index) => (
-                  <a
+                  <Link
                     key={index}
-                    href="/"
+                    href="#"
                     className="bg-[#dce2ed] hover:bg-primary p-1.5  rounded-full transition duration-500 ease-in-out"
                   >
                     {icon.icon}
-                  </a>
+                  </Link>
                 ))}
               </li>
             </ul>
@@ -107,8 +108,6 @@ export default function Contact() {
                   <br />
                   <span className="">
                     <textarea
-                      // cols="40"
-                      // rows="10"
                       className="input-shadow w-full h-44 py-2 px-6 my-4 focus:outline-none"
                       placeholder="Type your message here"
                     ></textarea>
@@ -128,5 +127,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-  )
+  );
 }

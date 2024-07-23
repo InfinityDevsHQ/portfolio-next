@@ -1,6 +1,6 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-function MenuIcon({ className }) {
+function MenuIcon({ className }: { className: string }) {
   return (
     <svg
       className={className}
@@ -24,13 +24,13 @@ function MenuIcon({ className }) {
         ></path>
       </g>
     </svg>
-  )
+  );
 }
 MenuIcon.propTypes = {
   className: PropTypes.string,
-}
-export { MenuIcon }
-function MenuCloseIcon({ className }) {
+};
+export { MenuIcon };
+function MenuCloseIcon({ className }: { className: string }) {
   return (
     <svg
       className={className}
@@ -53,14 +53,14 @@ function MenuCloseIcon({ className }) {
         ></path>
       </g>
     </svg>
-  )
+  );
 }
 MenuCloseIcon.propTypes = {
   className: PropTypes.string,
-}
-export { MenuCloseIcon }
+};
+export { MenuCloseIcon };
 
-function LocationIcon({ className }) {
+function LocationIcon({ className }: { className: string }) {
   return (
     <svg
       version="1.0"
@@ -85,14 +85,14 @@ function LocationIcon({ className }) {
         ></path>
       </g>
     </svg>
-  )
+  );
 }
 LocationIcon.propTypes = {
   className: PropTypes.string,
-}
-export { LocationIcon }
+};
+export { LocationIcon };
 
-function EmailIcon({ className }) {
+function EmailIcon({ className }: { className: string }) {
   return (
     <svg
       className={className}
@@ -116,14 +116,14 @@ function EmailIcon({ className }) {
         ></path>
       </g>
     </svg>
-  )
+  );
 }
 EmailIcon.propTypes = {
   className: PropTypes.string,
-}
-export { EmailIcon }
+};
+export { EmailIcon };
 
-function PhoneIcon({ className }) {
+function PhoneIcon({ className }: { className: string }) {
   return (
     <svg
       className={className}
@@ -144,13 +144,13 @@ function PhoneIcon({ className }) {
         ></path>
       </g>
     </svg>
-  )
+  );
 }
 PhoneIcon.propTypes = {
   className: PropTypes.string,
-}
-export { PhoneIcon }
-function WorldIcon({ className }) {
+};
+export { PhoneIcon };
+function WorldIcon({ className }: { className: string }) {
   return (
     <svg
       className={className}
@@ -173,14 +173,14 @@ function WorldIcon({ className }) {
         <path d="M18.41,9l5-.7,2.29-1.25,2.58.74,4.12-.23,1.42-2.22,2.05.34,5-.47,1.38-1.52,2-1.29,2.74.41,1-.15a27.91,27.91,0,0,0-33.51,7.49h0ZM37.18,2.78,40,1.21l1.84,1.06-2.66,2-2.54.26-1.14-.74ZM28.71,3,30,3.54,31.63,3l.9,1.56-3.82,1L26.88,4.5S28.67,3.35,28.71,3Z"></path>
       </g>
     </svg>
-  )
+  );
 }
 WorldIcon.propTypes = {
   className: PropTypes.string,
-}
-export { WorldIcon }
+};
+export { WorldIcon };
 
-function FacebookIcon({ className }) {
+function FacebookIcon({ className }: { className: string }) {
   return (
     <svg
       className={`social-icons ${className}`}
@@ -220,14 +220,14 @@ function FacebookIcon({ className }) {
         </g>
       </g>
     </svg>
-  )
+  );
 }
 FacebookIcon.propTypes = {
   className: PropTypes.string,
-}
+};
 
-export { FacebookIcon }
-function TwitterIcon({ className }) {
+export { FacebookIcon };
+function TwitterIcon({ className }: { className: string }) {
   return (
     <svg
       className={`social-icons ${className}`}
@@ -267,14 +267,14 @@ function TwitterIcon({ className }) {
         </g>
       </g>
     </svg>
-  )
+  );
 }
 TwitterIcon.propTypes = {
   className: PropTypes.string,
-}
-export { TwitterIcon }
+};
+export { TwitterIcon };
 
-function LinkedIn({ className }) {
+function LinkedIn({ className }: { className: string }) {
   return (
     <svg
       className={`social-icons ${className}`}
@@ -295,15 +295,15 @@ function LinkedIn({ className }) {
         </g>
       </g>
     </svg>
-  )
+  );
 }
 LinkedIn.propTypes = {
   className: PropTypes.string,
-}
+};
 
-export { LinkedIn }
+export { LinkedIn };
 
-function PinIcon({ className }) {
+function PinIcon({ className }: { className: string }) {
   return (
     <svg
       className={`social-icons ${className}`}
@@ -343,14 +343,14 @@ function PinIcon({ className }) {
         </g>
       </g>
     </svg>
-  )
+  );
 }
 PinIcon.propTypes = {
   className: PropTypes.string,
-}
-export { PinIcon }
+};
+export { PinIcon };
 
-function DribbleIcon({ className }) {
+function DribbleIcon({ className }: { className: string }) {
   return (
     <svg
       className={`social-icons ${className}`}
@@ -370,15 +370,15 @@ function DribbleIcon({ className }) {
         <path d="M25.916 7.921c-1.881 2.234-4.289 3.965-7.035 5.009l-0.118 0.039c0.3 0.612 0.587 1.231 0.85 1.857 0.1 0.225 0.187 0.45 0.275 0.662 0.927-0.102 2.003-0.16 3.092-0.16 2.063 0 4.077 0.208 6.023 0.605l-0.193-0.033c-0.020-3.040-1.107-5.821-2.904-7.994l0.017 0.021zM13.001 3.569c1.595 2.15 3.176 4.6 4.598 7.151l0.178 0.347c2.712-0.908 4.989-2.511 6.694-4.6l0.021-0.026c-2.247-2.006-5.228-3.232-8.494-3.232-1.063 0-2.096 0.13-3.084 0.375l0.088-0.018zM3.46 13.395c4.219-0.022 8.295-0.59 12.176-1.636l-0.333 0.076c-1.652-2.899-3.222-5.318-4.912-7.644l0.163 0.236c-3.596 1.721-6.227 4.966-7.077 8.875l-0.015 0.085zM6.484 24.585c2.42-3.882 6.010-6.839 10.271-8.408l0.141-0.045c0.169-0.056 0.337-0.105 0.506-0.15-0.325-0.731-0.675-1.458-1.040-2.174-3.888 1.154-8.355 1.819-12.977 1.819-0.066 0-0.131-0-0.196-0l0.010 0-0.005 0.39c0 0.003 0 0.006 0 0.009 0 3.297 1.25 6.302 3.301 8.568l-0.010-0.011zM21.005 27.809c-0.682-3.699-1.63-6.957-2.863-10.070l0.126 0.361-0.082 0.025c-4.314 1.346-7.826 4.192-10.002 7.915l-0.045 0.083c2.145 1.688 4.885 2.707 7.863 2.707 1.805 0 3.522-0.374 5.078-1.049l-0.083 0.032zM28.646 18.052c-1.571-0.474-3.376-0.747-5.245-0.747-0.964 0-1.911 0.073-2.836 0.213l0.104-0.013c0.98 2.564 1.842 5.629 2.436 8.789l0.054 0.344c2.874-1.96 4.893-4.993 5.482-8.51l0.010-0.075zM16 30.996c0 0 0 0-0 0-8.282 0-14.996-6.714-14.996-14.996s6.714-14.996 14.996-14.996c8.282 0 14.996 6.714 14.996 14.996 0 0 0 0 0 0v0c-0.011 8.277-6.718 14.984-14.995 14.996h-0.001z"></path>
       </g>
     </svg>
-  )
+  );
 }
 DribbleIcon.propTypes = {
   className: PropTypes.string,
-}
+};
 
-export { DribbleIcon }
+export { DribbleIcon };
 
-function InstagramIcon({ className }) {
+function InstagramIcon({ className }: { className: string }) {
   return (
     <svg
       className={`social-icons ${className}`}
@@ -402,9 +402,9 @@ function InstagramIcon({ className }) {
         <circle cx="12" cy="12" r="3" stroke="#8a8fa3" strokeWidth="2"></circle>
       </g>
     </svg>
-  )
+  );
 }
 InstagramIcon.propTypes = {
   className: PropTypes.string,
-}
-export { InstagramIcon }
+};
+export { InstagramIcon };
