@@ -11,10 +11,10 @@ export default function Navbar() {
 
   return (
     <header className="max-w-7xl mx-auto ">
-      <nav className="">
+      <nav>
         <div className="flex h-20 items-center justify-between px-4 py-2">
           {/* Logo */}
-          <div className="">
+          <div>
             <Link href="#" className="text-2xl font-semibold">
               Mak
             </Link>

@@ -40,7 +40,7 @@ export default function Contact() {
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-4">
-          <div className="">
+          <div>
             <h4 className="text-lg text-black/80 font-medium">Contact Info</h4>
             <ul className="flex flex-col gap-4 md:gap-8 my-4 md:my-6">
               {contactInfo.map((info, index) => (
@@ -55,7 +55,7 @@ export default function Contact() {
             </ul>
 
             <h5 className="text-lg font-medium">Follow Me</h5>
-            <ul className="">
+            <ul>
               <li className="flex items-center gap-1.5 my-4">
                 {socialIcons.map((icon, index) => (
                   <Link
@@ -71,8 +71,8 @@ export default function Contact() {
           </div>
 
           <div className="md:col-span-2">
-            <form className="">
-              <div className="">
+            <form>
+              <div>
                 <label className="uppercase text-sm">Name</label>
                 <br />
                 <input
@@ -82,7 +82,7 @@ export default function Contact() {
                 />
 
                 <div className="flex flex-col md:flex-row items-stretch justify-between gap-4 my-4 md:my-0">
-                  <div className="">
+                  <div>
                     <label className="uppercase text-sm">Phone Number</label>
                     <br />
                     <input
@@ -91,7 +91,7 @@ export default function Contact() {
                       type="text"
                     />
                   </div>
-                  <div className="">
+                  <div>
                     <label className="uppercase text-sm">Email</label>
                     <br />
                     <input
@@ -102,11 +102,11 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div>
                 <p>
                   <label className="uppercase text-sm">Your Message</label>
                   <br />
-                  <span className="">
+                  <span>
                     <textarea
                       className="input-shadow w-full h-44 py-2 px-6 my-4 focus:outline-none"
                       placeholder="Type your message here"
@@ -114,7 +114,7 @@ export default function Contact() {
                   </span>
                 </p>
               </div>
-              <div className="">
+              <div>
                 <button
                   className="font-medium text-center px-8 md:px-14 lg:px-10 py-4 md:py-4 mt-2 md:mt-6  md:w-1/3 bg-primary text-white border-2  hover:bg-black  hover:text-white transition duration-300 ease-in-out"
                   type="button"

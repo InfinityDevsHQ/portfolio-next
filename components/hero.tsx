@@ -19,7 +19,7 @@ export default function Hero() {
           Hire Me
         </Link>
       </div>
-      <div className="">
+      <div>
         <Image
           width={600}
           height={600}

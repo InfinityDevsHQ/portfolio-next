@@ -33,14 +33,14 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 w-full px-4 py-8 md:py-10">
       <div className="flex flex-col items-center gap-6 justify-center max-w-2xl mx-auto px-4 py-10 md:py-14">
-        <Link href="#" className="">
+        <Link href="#">
           <h2 className="text-8xl text-primary font-bold">M.</h2>
         </Link>
         <p className="text-center font-light text-lg text-secondary">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.
         </p>
-        <ul className="">
+        <ul>
           <li className="flex gap-2 flex-row">
             {socialIcons.map((item, index) => (
               <FooterIcons key={index} icon={item.icon} />
@@ -48,7 +48,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="">
+      <div>
         <p className="text-black text-center">Copyright © 2023 DroitThemes</p>
       </div>
     </footer>

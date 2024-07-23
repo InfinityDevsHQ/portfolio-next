@@ -36,7 +36,7 @@ export default function Services() {
               <h3 className="text-2xl md:text-3xl font-semibold">
                 {service.title}
               </h3>
-              <p className="">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
                 dolore dolore eu fugiat.
               </p>
