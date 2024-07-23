@@ -34,7 +34,7 @@ export default function Contact() {
     <div className="bg-white w-full" id="contact">
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 lg:py-28">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-4xl md:text-[45px] relative font-bold text-center pb-3 mb-4 md:pb-6 md:mb-8">
+          <h2 className="text-40 md:text-5xl relative font-bold text-center pb-3 mb-4 md:pb-6 md:mb-8">
             Contact Me
             <Underline style="h-1" />
           </h2>
@@ -61,7 +61,7 @@ export default function Contact() {
                   <Link
                     key={index}
                     href="#"
-                    className="bg-[#dce2ed] hover:bg-primary p-1.5  rounded-full transition duration-500 ease-in-out"
+                    className="bg-muted hover:bg-primary p-1.5  rounded-full transition duration-500 ease-in-out"
                   >
                     {icon.icon}
                   </Link>

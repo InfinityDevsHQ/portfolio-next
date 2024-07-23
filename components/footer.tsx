@@ -22,7 +22,7 @@ function FooterIcons({ icon, index }: any) {
     <Link
       key={index}
       href="/"
-      className="bg-[#dce2ed] hover:bg-primary p-2 sm:p-3 md:p-4 rounded-full transition duration-500 ease-in-out"
+      className="bg-muted hover:bg-primary p-2 sm:p-3 md:p-4 rounded-full transition duration-500 ease-in-out"
     >
       {icon}
     </Link>
@@ -31,7 +31,7 @@ function FooterIcons({ icon, index }: any) {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f6f8fc] w-full px-4 py-8 md:py-10">
+    <footer className="bg-gray-100 w-full px-4 py-8 md:py-10">
       <div className="flex flex-col items-center gap-6 justify-center max-w-2xl mx-auto px-4 py-10 md:py-14">
         <Link href="#" className="">
           <h2 className="text-8xl text-primary font-bold">M.</h2>

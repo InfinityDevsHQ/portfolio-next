@@ -8,7 +8,7 @@ export default function Experience() {
       id="experience"
     >
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-4xl md:text-[45px] relative font-bold text-center pb-3 mb-4 md:pb-6 md:mb-8">
+        <h2 className="text-40 md:text-5xl relative font-bold text-center pb-3 mb-4 md:pb-6 md:mb-8">
           Work Experience
           <Underline style="h-1" />
         </h2>
@@ -21,7 +21,7 @@ export default function Experience() {
       <div className="grid md:grid-cols-3">
         {experienceArray.map((exp, index) => (
           <div
-            className="px-4 py-8 md:px-10 md:py-14 border border-[#edecec] bg-white text-secondary hover:text-black/80 hover:bg-primary transition duration-300 ease-in-out"
+            className="px-4 py-8 md:px-10 md:py-14 border border-zinc-100 bg-white text-secondary hover:text-black/80 hover:bg-primary transition duration-300 ease-in-out"
             key={index}
           >
             <div className="flex flex-col gap-4 items-start justify-center ">

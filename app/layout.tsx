@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="font-poppins bg-[#fbfbfb]">
+        <div className="font-poppins bg-zinc-100">
           <Navbar />
           {children}
           <Footer />

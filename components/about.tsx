@@ -9,7 +9,7 @@ export default function About() {
       id="about"
     >
       <div className="relative">
-        <h2 className=" text-3xl md:text-[40px] font-bold absolute pb-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 capitalize">
+        <h2 className=" text-3xl md:text-40 font-bold absolute pb-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 capitalize">
           About me
           <Underline style="h-1" />
         </h2>
@@ -21,13 +21,13 @@ export default function About() {
         />
       </div>
       <div className="flex flex-col max-w-2xl gap-8 text-center md:text-start">
-        <p className="text-[#8a8fa3] ">
+        <p className="text-secondary">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <p className="text-[#8a8fa3]">
+        <p className="text-secondary">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nu pariatur excepteur sint occaecat.
         </p>

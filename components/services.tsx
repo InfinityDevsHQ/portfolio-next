@@ -9,11 +9,11 @@ export default function Services() {
       id="services"
     >
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-4xl md:text-[45px] font-bold relative text-center pb-3 mb-4 md:pb-6 md:mb-8">
+        <h2 className="text-40 md:text-5xl font-bold relative text-center pb-3 mb-4 md:pb-6 md:mb-8">
           Services
           <Underline style="h-1" />
         </h2>
-        <p className="text-[#8a8fa3] text-center max-w-3xl mx-auto mb-8 md:mb-20">
+        <p className="text-secondary text-center max-w-3xl mx-auto mb-8 md:mb-20">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
           omnis iste natur

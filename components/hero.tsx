@@ -9,7 +9,7 @@ export default function Hero() {
     >
       <div className="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start">
         <h2 className="text-5xl md:text-7xl font-semibold">I’m Michael</h2>
-        <h4 className="text-xl md:text-2xl text-[#666] text-center md:text-start">
+        <h4 className="text-xl md:text-2xl text-secondary text-center md:text-start">
           Freelance Web &amp; Mobile UI/UX Designer
         </h4>
         <Link
