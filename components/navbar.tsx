@@ -4,6 +4,7 @@ import { MenuCloseIcon, MenuIcon } from "./General/icons";
 import { Underline } from "./General/underline";
 import Link from "next/link";
 import { navLinks } from "../constants";
+import smoothScrollTo from "@/utils";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState("");
@@ -34,15 +35,16 @@ export default function Navbar() {
             <ul className="flex gap-10">
               {navLinks.map((link, index) => (
                 <li key={index}>
-                  <Link
-                    href={link.link}
+                  <button
+                    type="button"
                     className="relative pb-1.5 text-sm font-medium uppercase hover:text-primary transition duration-300 ease-in-out"
                     onMouseEnter={() => setIsHovered(link.name)}
                     onMouseLeave={() => setIsHovered("")}
+                    onClick={() => smoothScrollTo(link.link)}
                   >
                     {link.name}
                     {isHovered === link.name && <Underline style="h-0.5" />}
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>

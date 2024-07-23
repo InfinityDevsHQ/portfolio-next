@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-4 px-4 py-28">
+    <div
+      className="max-w-6xl mx-auto flex flex-col md:flex-row gap-4 px-4 py-28"
+      id="about"
+    >
       <div className="relative">
         <h2 className=" text-3xl md:text-[40px] font-bold absolute pb-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 capitalize">
           About me

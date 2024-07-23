@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col-reverse gap-6 justify-center md:grid md:grid-cols-2 max-w-7xl mx-auto items-center justify-items-center px-4 py-8">
+    <div
+      className="flex flex-col-reverse gap-6 justify-center md:grid md:grid-cols-2 max-w-7xl mx-auto items-center justify-items-center px-4 py-8"
+      id="home"
+    >
       <div className="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start">
         <h2 className="text-5xl md:text-7xl font-semibold">I’m Michael</h2>
         <h4 className="text-xl md:text-2xl text-[#666] text-center md:text-start">

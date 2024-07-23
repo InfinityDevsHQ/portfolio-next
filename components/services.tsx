@@ -4,7 +4,10 @@ import { servicesArray } from "../constants";
 
 export default function Services() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28">
+    <div
+      className="max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28"
+      id="services"
+    >
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-4xl md:text-[45px] font-bold relative text-center pb-3 mb-4 md:pb-6 md:mb-8">
           Services
