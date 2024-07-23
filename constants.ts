@@ -1,13 +1,40 @@
-export const navLinks = [
-  "Home",
-  "About Us",
-  "Services",
-  "Experiences",
-  "Portfolio",
-  "Blog",
-  "Contact Us",
+export const navLinks: NavLinksType[] = [
+  {
+    link: "/",
+    name: "Home",
+    id: 1,
+  },
+  {
+    link: "#about",
+    name: "About",
+    id: 2,
+  },
+  {
+    link: "#services",
+    name: "Services",
+    id: 3,
+  },
+  {
+    link: "#experience",
+    name: "Experience",
+    id: 4,
+  },
+  {
+    link: "#portfolio",
+    name: "portfolio",
+    id: 5,
+  },
+  {
+    link: "#blog",
+    name: "Blog",
+    id: 6,
+  },
+  {
+    link: "#cotact",
+    name: "Contact Us",
+    id: 6,
+  },
 ];
-
 export const servicesArray = [
   {
     title: "UX Research",

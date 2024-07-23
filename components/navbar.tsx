@@ -35,13 +35,13 @@ export default function Navbar() {
               {navLinks.map((link, index) => (
                 <li key={index}>
                   <Link
-                    href="/"
+                    href={link.link}
                     className="relative pb-1.5 text-sm font-medium uppercase hover:text-primary transition duration-300 ease-in-out"
-                    onMouseEnter={() => setIsHovered(link)}
+                    onMouseEnter={() => setIsHovered(link.name)}
                     onMouseLeave={() => setIsHovered("")}
                   >
-                    {link}
-                    {isHovered === link && <Underline style="h-0.5" />}
+                    {link.name}
+                    {isHovered === link.name && <Underline style="h-0.5" />}
                   </Link>
                 </li>
               ))}
@@ -60,11 +60,11 @@ export default function Navbar() {
                 <Link
                   href="#"
                   className="relative pb-1.5 text-sm font-medium uppercase hover:text-primary transition duration-300 ease-in-out"
-                  onMouseEnter={() => setIsHovered(link)}
+                  onMouseEnter={() => setIsHovered(link.name)}
                   onMouseLeave={() => setIsHovered("")}
                 >
-                  {link}
-                  {isHovered === link && <Underline style="h-0.5" />}
+                  {link.name}
+                  {isHovered === link.name && <Underline style="h-0.5" />}
                 </Link>
               </li>
             ))}
