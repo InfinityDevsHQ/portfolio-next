@@ -3,7 +3,7 @@ import { useState } from "react";
 import { MenuCloseIcon, MenuIcon } from "./General/icons";
 import { Underline } from "./General/underline";
 import Link from "next/link";
-import { navLinks } from "@/app/constants";
+import { navLinks } from "../constants";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState("");
