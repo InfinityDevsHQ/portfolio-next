@@ -1,4 +1,4 @@
-import { experienceArray } from "../constants";
+import { experienceArray } from "@/app/constants";
 import { Underline } from "./General/underline";
 
 export default function Experience() {

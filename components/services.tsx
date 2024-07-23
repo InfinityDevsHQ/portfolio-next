@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Underline } from "./General/underline";
-import { servicesArray } from "../constants";
+import { servicesArray } from "@/app/constants";
 
 export default function Services() {
   return (
