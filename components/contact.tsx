@@ -11,57 +11,66 @@ import {
 import { Underline } from "./General/underline";
 
 const socialIcons = [
-  { icon: <FacebookIcon className="size-4" /> },
-  { icon: <TwitterIcon className="size-4" /> },
-  { icon: <LinkedIn className="size-4" /> },
+  { icon: <FacebookIcon className="size-4 no-bg" /> },
+  { icon: <TwitterIcon className="size-4 no-bg" /> },
+  { icon: <LinkedIn className="size-4 no-bg" /> },
 ];
 
 const contactInfo = [
   {
-    icon: <LocationIcon className="size-5 " />,
+    icon: <LocationIcon className="size-5 text-[#727b86] " />,
     text: "DroitThemes, Mirpur DOHS, Dhaka",
   },
-  { icon: <EmailIcon className="size-5" />, text: "inova.theme@gmail.com" },
   {
-    icon: <PhoneIcon className="size-5 mt-1" />,
+    icon: <EmailIcon className="size-5 text-[#727b86]" />,
+    text: "inova.theme@gmail.com",
+  },
+  {
+    icon: <PhoneIcon className="size-5 text-[#727b86] mt-1" />,
     text: "+92548616475 <br /> +92548616475",
   },
-  { icon: <WorldIcon className="size-5" />, text: "www.droitthemes.com" },
+  {
+    icon: <WorldIcon className="size-5 text-[#727b86]" />,
+    text: "www.droitthemes.com",
+  },
 ];
 
 export default function Contact() {
   return (
-    <div className="bg-white w-full" id="contact">
-      <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 lg:py-28">
+    <section id="contact" className="bg-white w-full">
+      <div className="max-w-[1200px] mx-auto px-4 py-16 md:py-20 lg:py-28">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-40 md:text-5xl relative font-bold text-center pb-3 mb-4 md:pb-6 md:mb-8">
+          <h2 className="text-4xl md:text-[45px] relative font-bold text-center pb-3 mb-4 md:pb-6 md:mb-8">
             Contact Me
             <Underline style="h-1" />
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-4">
           <div>
-            <h4 className="text-lg text-black/80 font-medium">Contact Info</h4>
+            <h4 className="text-lg text-darkText font-medium">Contact Info</h4>
             <ul className="flex flex-col gap-4 md:gap-8 my-4 md:my-6">
               {contactInfo.map((info, index) => (
-                <li key={index} className="flex items-center gap-2">
+                <li
+                  key={index}
+                  className="flex items-center lg:items-start gap-2"
+                >
                   {info.icon}
                   <span
-                    className="text-secondary"
+                    className="text-[#727b86]"
                     dangerouslySetInnerHTML={{ __html: info.text }}
                   />
                 </li>
               ))}
             </ul>
 
-            <h5 className="text-lg font-medium">Follow Me</h5>
+            <h5 className="text-lg lg:text-xl text-darkText">Follow Me</h5>
             <ul>
               <li className="flex items-center gap-1.5 my-4">
                 {socialIcons.map((icon, index) => (
                   <Link
                     key={index}
-                    href="#"
-                    className="bg-muted hover:bg-primary p-1.5  rounded-full transition duration-500 ease-in-out"
+                    href="/"
+                    className="p-1.5 rounded-full transition-all duration-500 ease-in-out hover:fill-primary"
                   >
                     {icon.icon}
                   </Link>
@@ -73,29 +82,33 @@ export default function Contact() {
           <div className="md:col-span-2">
             <form>
               <div>
-                <label className="uppercase text-sm">Name</label>
+                <label className="uppercase text-sm text-darkText">Name</label>
                 <br />
                 <input
-                  className="input-shadow w-full h-16 py-2 px-6 my-2 md:my-4 focus:outline-none"
+                  className="input-shadow placeholder:text-placeholderText w-full h-16 py-2 px-6 my-2 md:my-4 focus:outline-none"
                   placeholder="Type your name"
                   type="text"
                 />
 
-                <div className="flex flex-col md:flex-row items-stretch justify-between gap-4 my-4 md:my-0">
-                  <div>
-                    <label className="uppercase text-sm">Phone Number</label>
+                <div className="flex flex-col md:flex-row items-stretch justify-stretch gap-4 my-4 md:my-0">
+                  <div className="w-full">
+                    <label className="uppercase text-sm text-darkText">
+                      Phone Number
+                    </label>
                     <br />
                     <input
-                      className="input-shadow w-full h-16 py-2 px-6 my-2 md:my-4 focus:outline-none"
+                      className="input-shadow placeholder:text-placeholderText w-full h-16 py-2 px-6 my-2 md:my-4 focus:outline-none"
                       placeholder="Type your phone number"
                       type="text"
                     />
                   </div>
-                  <div>
-                    <label className="uppercase text-sm">Email</label>
+                  <div className="w-full">
+                    <label className="uppercase text-sm text-darkText">
+                      Email
+                    </label>
                     <br />
                     <input
-                      className="input-shadow w-full h-16 py-2 px-6 my-2 md:my-4 focus:outline-none"
+                      className="input-shadow placeholder:text-placeholderText w-full h-16 py-2 px-6 my-2 md:my-4 focus:outline-none"
                       placeholder="Type your email address"
                       type="email"
                     />
@@ -104,11 +117,13 @@ export default function Contact() {
               </div>
               <div>
                 <p>
-                  <label className="uppercase text-sm">Your Message</label>
+                  <label className="uppercase text-sm text-darkText">
+                    Your Message
+                  </label>
                   <br />
                   <span>
                     <textarea
-                      className="input-shadow w-full h-44 py-2 px-6 my-4 focus:outline-none"
+                      className="input-shadow placeholder:text-placeholderText w-full h-44 py-2 px-6 my-4 focus:outline-none"
                       placeholder="Type your message here"
                     ></textarea>
                   </span>
@@ -116,7 +131,7 @@ export default function Contact() {
               </div>
               <div>
                 <button
-                  className="font-medium text-center px-8 md:px-14 lg:px-10 py-4 md:py-4 mt-2 md:mt-6  md:w-1/3 bg-primary text-white border-2  hover:bg-black  hover:text-white transition duration-300 ease-in-out"
+                  className="font-medium text-center px-8 md:px-14 lg:px-10 py-4 md:py-4 lg:py-5 mt-2 md:mt-6 bg-primary text-white border-2  hover:bg-black hover:text-white transition duration-300 ease-in-out"
                   type="button"
                 >
                   Send Message
@@ -126,6 +141,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
