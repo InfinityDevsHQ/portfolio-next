@@ -20,6 +20,11 @@ const config: Config = {
         primary: "#fcc520",
         secondary: "#8a8fa3",
         muted: "#dce2ed",
+        primaryYellow: "#feb633",
+        secondaryDark: "#666666",
+        primaryDark: "#32333C",
+        background: "#fbfbfb",
+        placeholderText: "#9ca3af",
       },
       spacing: {
         40: "2.5rem",
