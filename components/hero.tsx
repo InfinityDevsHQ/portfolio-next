@@ -3,30 +3,32 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div
-      className="flex flex-col-reverse gap-6 justify-center md:grid md:grid-cols-2 max-w-7xl mx-auto items-center justify-items-center px-4 py-8"
-      id="home"
+    <section
+      id="hero"
+      className="flex flex-col-reverse md:flex-row gap-6 justify-center xl:justify-between max-w-[1200px] mx-auto items-center lg:items-start px-4 pt-20 sm:pt-24 md:pt-28 lg:pt-40 lg:px-0 xl:pt-[185px]"
     >
-      <div className="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start">
-        <h2 className="text-5xl md:text-7xl font-semibold">I’m Michael</h2>
-        <h4 className="text-xl md:text-2xl text-secondary text-center md:text-start">
+      <div className="flex flex-col items-center justify-center md:items-start md:justify-start xl:max-w-lg lg:pt-32 lg:px-4">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-primaryDark text-center md:text-start mb-1 ">
+          I’m Michael
+        </h2>
+        <h4 className="text-lg md:text-xl lg:text-2xl text-secondaryDark text-center md:text-start max-w-md mb-4 sm:mb-6 lg:mb-12">
           Freelance Web &amp; Mobile UI/UX Designer
         </h4>
         <Link
-          href="#"
-          className="text-xl font-medium text-center px-12 md:px-14 lg:px-16 py-2 md:py-4 mt-2 md:mt-6 md:w-1/2 bg-primary text-white border-2 border-primary hover:bg-transparent  hover:border-blue-500 hover:text-primary transition duration-300 ease-in-out"
+          href="#contactForm"
+          className="text-xl font-medium text-center px-12 md:px-8 md:py-4 lg:px-16 py-2 md:w-1/2 bg-[#fec110] text-white border-2 border-primary hover:bg-transparent  hover:border-[#edecec] hover:text-primary rounded transition duration-300 ease-in-out whitespace-nowrap"
         >
           Hire Me
         </Link>
       </div>
-      <div>
+      <div className="xl:w-[670px] xl:h-[635]">
         <Image
-          width={600}
-          height={600}
           src="/hero-image.png"
-          alt="hero-image"
+          alt="hero image"
+          width={670}
+          height={635}
         />
       </div>
-    </div>
+    </section>
   );
 }
