@@ -1,39 +1,11 @@
 export const navLinks: NavLinksType[] = [
-  {
-    link: "home",
-    name: "Home",
-    id: 1,
-  },
-  {
-    link: "about",
-    name: "About",
-    id: 2,
-  },
-  {
-    link: "services",
-    name: "Services",
-    id: 3,
-  },
-  {
-    link: "experience",
-    name: "Experience",
-    id: 4,
-  },
-  {
-    link: "portfolio",
-    name: "portfolio",
-    id: 5,
-  },
-  {
-    link: "blog",
-    name: "Blog",
-    id: 6,
-  },
-  {
-    link: "contact",
-    name: "Contact Us",
-    id: 6,
-  },
+  { text: "Home", href: "hero" },
+  { text: "About Us", href: "about" },
+  { text: "Services", href: "services" },
+  { text: "Experiences", href: "experiences" },
+  { text: "Portfolio", href: "" },
+  { text: "Blog", href: "" },
+  { text: "Contact Us", href: "contact" },
 ];
 export const servicesArray = [
   {

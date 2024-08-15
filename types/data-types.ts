@@ -1,5 +1,4 @@
 type NavLinksType = {
-  link: string;
-  name: string;
-  id: number;
+  text: string;
+  href: string;
 };
