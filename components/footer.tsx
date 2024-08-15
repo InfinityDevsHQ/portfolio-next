@@ -7,6 +7,7 @@ import {
   PinIcon,
   TwitterIcon,
 } from "./General/icons";
+import Image from "next/image";
 
 const socialIcons = [
   { icon: <FacebookIcon className="size-5" /> },
@@ -31,10 +32,10 @@ function FooterIcons({ icon, index }: any) {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 w-full px-4 py-8 md:py-10">
+    <footer className="bg-[#f6f8fc] w-full px-4 py-8 md:py-10 border-t border-[#e1e6f1]">
       <div className="flex flex-col items-center gap-6 justify-center max-w-2xl mx-auto px-4 py-10 md:py-14">
-        <Link href="#">
-          <h2 className="text-8xl text-primary font-bold">M.</h2>
+        <Link href="/">
+          <Image src="/logo-retina-1.png" alt="logo" width={100} height={100} />
         </Link>
         <p className="text-center font-light text-lg text-secondary">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -49,7 +50,9 @@ export default function Footer() {
         </ul>
       </div>
       <div>
-        <p className="text-black text-center">Copyright © 2023 DroitThemes</p>
+        <p className="text-black text-center text-sm">
+          Copyright © 2023 DroitThemes
+        </p>
       </div>
     </footer>
   );
